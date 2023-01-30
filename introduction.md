@@ -12,4 +12,9 @@ algorithms:
 7. Search
 8. Misc algorithgms & problem solving
 
+Array
+________________________
+1. Reverse the array
+
+
 
