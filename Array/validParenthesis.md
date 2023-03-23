@@ -3,6 +3,7 @@
 
 ##### brute force - approach
 
+```
 function isValidParenthesis(s){
 	let stack = [];
   
@@ -27,3 +28,4 @@ function isValidParenthesis(s){
 
 const input1 = '({{[]}})';
 console.log("isValidParenthesis:", isValidParenthesis(input1));
+```
