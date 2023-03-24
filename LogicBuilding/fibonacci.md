@@ -13,8 +13,6 @@ function fibonacciSeries(n){
 
 }
 ```
-
-
 ##### print fibonacci series using recursion
 /* function fibonacciUsingRecursion(n){
   
@@ -41,7 +39,8 @@ function createFibonacciNumber(n) {
 console.log("createGFibonacciNumber:", createGFibonacciNumber(10));
 ```
 
-##### createFibonacciNumber using recursion
+##### createFibonacciNumber using recursion.
+
 ```
 function fibonacciUsingRecursion(n){	
   if(n<=1) return n;
