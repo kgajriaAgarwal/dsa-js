@@ -30,13 +30,10 @@ console.log("twoSum:", twoSum(nums, 22));
 ```
 function twoSumUsingTwoPointerApproach(ar, target){
 	var i = 0 ;
-  var j = ar.length-1;
-  var result = [];
-  console.log("ar:",ar)
-  
-  
-  while(i<j){
-  	if(ar[i] + ar[j] == target) {
+    var j = ar.length-1;
+    var result = [];
+    while(i<j){
+     if(ar[i] + ar[j] == target) {
         result.push(i,j); 
         return result;
      }
@@ -45,8 +42,8 @@ function twoSumUsingTwoPointerApproach(ar, target){
      }else{
      	j--;
      }
-  } 
-  if(result.length == 0) console.log("solution not found");
+    } 
+    if(result.length == 0) console.log("solution not found");
 }
 
 const nums = [7,11,15, 23]
