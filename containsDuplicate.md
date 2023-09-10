@@ -30,7 +30,7 @@ Output: true
 - Otherwise, add the element to the hash set.
 - If we finish iterating over the array and have not found a duplicate, return False.
 
-*** Complexity ***
+***Complexity***
 - Time complexity:
 - O(n) - We iterate over the array once.
 - Space complexity:
