@@ -65,3 +65,23 @@ map: Map(2) { 1 => true, 2 => true }
 map: Map(3) { 1 => true, 2 => true, 3 => true }
 containsDuplicate : true
 ```
+
+*** Better Approach to this solution ***
+- In js, we have set, which conatins only distinct element, no duplicate entries. Here we can create a set out of this array
+and then compare the length of the set with the length of the array, If the length of the set and array is same then no duplicate entries are found , otherwise duplicate entries are there in the array, and return true
+
+```
+var containsDuplicate = function(nums) {
+    const s = new Set(nums); return s.size !== nums.length
+};
+
+console.log("containsDuplicate :",containsDuplicate([1,2,3,10]))
+```
+
+*** Complexity ***
+- Time complexity:
+- O(n) - We iterate over the array once.
+- Space complexity:
+- O(n) 
+
+
