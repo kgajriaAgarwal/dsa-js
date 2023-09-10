@@ -22,7 +22,7 @@ Output: true
 ###### Approach
 - We can solve this problem using a hash set. We can iterate over the array and add each element to the hash set. If we encounter an element that is already in the hash set, we can return True, since it means that we have found a duplicate. If we finish iterating over the entire array and have not found a duplicate, we can return False.
 
-*** Algorithm: ***
+***Algorithm:***
 
 - Create an empty hash set.
 - Iterate over the array.
