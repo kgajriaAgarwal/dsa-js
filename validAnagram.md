@@ -14,7 +14,7 @@ Input: s = "rat", t = "car"
 Output: false
 ```
 
-*** Solution 1: ***
+***Solution 1:***
 - simple one liner solution
 
 1. s= 'anagram'
@@ -24,7 +24,7 @@ Output: false
 4. Repeat the same step 3 with string 't'.
 5. If Both the sorted strings 's' and 't' are equal, then they are valid anagrams, otherwise they are not valid anagrams 
 
-*** Code ***
+***Code***
 ```
 var isAnagram = function(s, t) {
     return s.split('').sort().join('') === t.split('').sort().join('')
@@ -32,29 +32,29 @@ var isAnagram = function(s, t) {
 
 console.log("isAnagram:", isAnagram("anagram","nagaram"))
 ```
-*** output ***
+***output***
 ```
 Output:
 
 isAnagram: true
 ```
 
-*** Complexity ***
+***Complexity***
 - Time complexity:
 - O(n) - We iterate over the array once.
 - Space complexity:
 - O(n) 
 
-*** solution 2 ***
+***solution 2***
 - This is a better an a precise solution of the above problem using hash map.
 
-*** Explanation ***
+***Explanation***
 - s = 'anagram'
 - t = 'nagaram' 
 
 ![Alt text](<autodraw 9_12_2023 (1).png>)
 
-*** Algorithm ***
+***Algorithm***
 
 
 
