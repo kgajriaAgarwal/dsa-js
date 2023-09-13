@@ -87,8 +87,48 @@ for (const c of s){
 }
 ```
 
+3. Now , we are going to iterate over the character of the string 't'
+   - Now, if we have encounterd the ch of string 't', if the particular character is not there in the hashmap, then we'll return false, as 's' and 't' , both are not valid anagrams
+   - Now, if we have encounterd the ch of string 't', that was already there in the hashmap, then we'll decrement its occourance value in the hashmap by one
+   - And On decrementing the final occurance value becomes zero, then we'll delete that particular character from the hashmap
 
+```
+for (const c of t){
+    if(!map.has(c)) return false;
+    map.set(c , map.get(c) - 1);
+    if(map.get(c) === 0) map.delete(c)
+}
+```
 
+4. Now After iterating over the string 's' and 't' , if the size of the map is greater than zero, then we can return zero as they are not the valid anagrams
+```
+if(map.size > 0) return false;
+```
+
+5. And Then finally return true, if the above condition is not satisfied, So if the above condition is not satisfied then string 's' and 't' are valid anagrams
+
+```
+var isAnagram = function(s, t) {
+    // return s.split('').sort().join('') === t.split('').sort().join('')
+    if(s.length !== t.length) return false;
+    const map = new Map();
+    for(const c of s){
+        if(map.has(c)) map.set(c, map.get(c) + 1)
+        else map.set(c, 1)
+    }
+
+    for(const c of t){
+        if(!map.has(c)) return false;
+        map.set(c, map.get(c) - 1);
+        if(map.get(c) === 0) map.delete(c);
+    }
+    if(map.size > 0) return false;
+
+    return true;
+};
+
+console.log("isAnagram:", isAnagram("anagram","pgaram"));
+```
 
 
 
