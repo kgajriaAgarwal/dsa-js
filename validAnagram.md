@@ -55,6 +55,19 @@ isAnagram: true
 ![Alt text](<autodraw 9_12_2023 (1).png>)
 
 ***Algorithm***
+*** Example 2 ***
+- s = 'anagram'
+- t = 'pgram' 
+
+![Alt text](image.png)
+
+*** Example 3 ***
+- s = 'anagram'
+- t = 'gram' 
+
+![Alt text](image-1.png)
+
+*** Algorithm ***
 
 
 
