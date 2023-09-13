@@ -48,26 +48,47 @@ isAnagram: true
 ***solution 2***
 - This is a better an a precise solution of the above problem using hash map.
 
-***Explanation***
+***Example 1***
 - s = 'anagram'
 - t = 'nagaram' 
 
 ![Alt text](<autodraw 9_12_2023 (1).png>)
 
-***Algorithm***
-*** Example 2 ***
+***Example 2***
 - s = 'anagram'
 - t = 'pgram' 
 
 ![Alt text](image.png)
 
-*** Example 3 ***
+***Example 3***
 - s = 'anagram'
 - t = 'gram' 
 
 ![Alt text](image-1.png)
 
-*** Algorithm ***
+***Explanation***
+1. Firstly we need to check if length of both strings, if s.length !== t.length, then we will directly return false, as they are not valid anagrams
+```
+if(s.length !== t.length) return false
+```
+
+2. Now, If length of both the s and t string are equal then we need to check the occourances.
+   - for eg. -> count of character 'a' in string 's' and string 't' , should be equal.
+   - Similarly we need to do it for all the characters found.
+   - For checking the ocoourances and maintaining the count of each and every chararcter in the string , we'll create a map
+   - After creating the hashmap, we'll iterate over the characters of the first string 's'
+   - Now, if we have encounterd the ch of string 's', that was already there in the hashmap, then we increment its occourance value in the hashmap by one
+   - Incase we have encounterd the ch of string 's' for the first time then we'll set its coourance value 1 in the hashmap
+```
+const map = new Map();
+for (const c of s){
+    if(map.has(c)) map.set(c, map.get(c) + 1)
+    else map.set(c, 1);
+}
+```
+
+
+
 
 
 
