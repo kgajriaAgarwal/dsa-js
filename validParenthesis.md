@@ -66,11 +66,7 @@ function isValid(s){
 console.log("is valid parenthesis:", isValid('{{(]}}]'))
 ```
 ***output***
-```
-Output:
-
-isAnagram: true
-```
+![Alt text](image-2.png)
 
 ***Complexity***
 - Time complexity:
