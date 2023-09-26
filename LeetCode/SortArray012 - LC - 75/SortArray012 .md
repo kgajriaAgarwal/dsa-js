@@ -85,7 +85,9 @@ console.log( "sortZeroOneTwo is:", sortZeroOneTwo(arr));
  
 
 ***Complexity***
+
 ![Alt text](image-6.png)
+
 - Here the Time complexity will become O(2n), as explained above.
 
 - Time Complexity - O(2n) - Here if we transverse the whole array ot transverse the array in parts the total time complexity is summation of O(n)
