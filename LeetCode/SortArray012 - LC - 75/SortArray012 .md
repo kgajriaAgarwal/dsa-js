@@ -138,17 +138,60 @@ ________________________________________________________________________________
 ##### Step 9
 ![Alt text](image-16.png)
 
+##### Code
+```
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+var sortColors = function(nums) {
+    let n = nums.length;
+    let l = 0, m = 0, h = n - 1;
+    let temp = 0;
 
+    while(m<=h){
+      //Ecounters ZERO
+      if(nums[m] == 0){
+        //swap l and m
+        temp = nums[m];
+        nums[m] = nums[l];
+        nums[l]= temp;
+        //increment l and m pointers
+        l++;
+        m++
+      }
+      //Ecounters ONE
+      else if(nums[m] == 1){
+        //leave element at l pointer as it is and increment m pointer
+        m++;
+      }
+      //Ecounters TWO
+      else 
+      {
+        //swap m and h
+        temp = nums[m];
+        nums[m] = nums[h];
+        nums[h] = temp;
+        //decrement h pointer
+        h--;
+      }
+    }
+    // console.log('sorted arr:', nums);
+  return nums;
+};
 
+let arr= [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 ];
+console.log("sorted colors:",sortColors(arr) )
+```
 
+##### Output
+![Alt text](image-19.png)
 
+***Complexity***
+Time Complexity: O(n), Only one traversal of the array is needed.
+Space Complexity: O(1), No extra space is required.
 
-
-
-
-
-
-
+__________________________________________________________________________________________________________________________
 
 - This Que has been asked in various companies like - 
 Paytm
