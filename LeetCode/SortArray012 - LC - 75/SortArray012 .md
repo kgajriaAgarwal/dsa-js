@@ -93,6 +93,18 @@ console.log( "sortZeroOneTwo is:", sortZeroOneTwo(arr));
 - Time Complexity - O(2n) - Here if we transverse the whole array ot transverse the array in parts the total time complexity is summation of O(n)
 - Space Complexity - O(1), as we are not using any extra space.
 
+________________________________________________________________________________
+
+***Solution 3 - Optimal approach - using pointers***
+
+***example 1***
+- let's understand the pointer approach using example
+- input arr = [0,1,2,1,2,0,1]
+
+***Step 1***
+![Alt text](image-7.png)
+
+***Step 2***
 
 
 
