@@ -110,6 +110,23 @@ ________________________________________________________________________________
 ##### Step 3
 - ![Alt text](image-10.png)
 
+##### Step 4
+- ![Alt text](image-11.png)
+
+##### Step 5
+- ![Alt text](image-12.png)
+
+##### Step 6
+- ![Alt text](image-13.png)
+
+##### Step 7
+- ![Alt text](image-14.png)
+
+##### Step 8
+- ![Alt text](image-15.png)
+
+##### Step 9
+- ![Alt text](image-16.png)
 
 
 
