@@ -101,10 +101,11 @@ ________________________________________________________________________________
 - let's understand the pointer approach using example
 - input arr = [0,1,2,1,2,0,1]
 
-***Step 1***
-![Alt text](image-7.png)
+- **Step 1**
+![Alt text](image-8.png)
 
-***Step 2***
+- **Step 2**
+![Alt text](image-9.png)
 
 
 
