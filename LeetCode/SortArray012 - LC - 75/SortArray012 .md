@@ -102,6 +102,10 @@ ________________________________________________________________________________
 
 ##### Simple steps to follow for this sorting
 ![Alt text](image-18.png)
+1. If we encounter a[m] == 0, that is m encounters a zero, then we swap elements at l and m pointers position, and then increment both l and m pointers.
+2. If we encounter a[m] == 1, that is m encounters a one, then leave the elment at m as it is, and then increment m pointer.
+3. If we encounter a[m] == 2, that is m encounters a two, then we swap elements at h and m pointers position, and then decrement h pointer, , m pointer will remain as it is , it will not get incremented because m pointers is getting a new element, that will be coming from right hand side of the array
+4. Now The new element at m pointer is checked and the action is taken accordingly. 
 
 ***example 1***
 - let's understand the pointer approach using example
