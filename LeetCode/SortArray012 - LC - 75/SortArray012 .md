@@ -98,41 +98,41 @@ ________________________________________________________________________________
 ***Solution 3 - Optimal approach - using pointers***
 
 ***Explanation***
-- ![Alt text](image-17.png)
+![Alt text](image-17.png)
 
 ##### Simple steps to follow for this sorting
-- ![Alt text](image-18.png)
+![Alt text](image-18.png)
 
 ***example 1***
 - let's understand the pointer approach using example
 - input arr = [0,1,2,1,2,0,1]
 
 ##### Step 1
-- ![Alt text](image-8.png)
+![Alt text](image-8.png)
 
 ##### Step 2
-- ![Alt text](image-9.png)
+![Alt text](image-9.png)
 
 ##### Step 3
-- ![Alt text](image-10.png)
+![Alt text](image-10.png)
 
 ##### Step 4
-- ![Alt text](image-11.png)
+![Alt text](image-11.png)
 
 ##### Step 5
-- ![Alt text](image-12.png)
+![Alt text](image-12.png)
 
 ##### Step 6
-- ![Alt text](image-13.png)
+![Alt text](image-13.png)
 
 ##### Step 7
-- ![Alt text](image-14.png)
+![Alt text](image-14.png)
 
 ##### Step 8
-- ![Alt text](image-15.png)
+![Alt text](image-15.png)
 
 ##### Step 9
-- ![Alt text](image-16.png)
+![Alt text](image-16.png)
 
 
 
