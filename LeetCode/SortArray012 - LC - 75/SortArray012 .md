@@ -97,6 +97,12 @@ ________________________________________________________________________________
 
 ***Solution 3 - Optimal approach - using pointers***
 
+***Explanation***
+- ![Alt text](image-17.png)
+
+##### Simple steps to follow for this sorting
+- ![Alt text](image-18.png)
+
 ***example 1***
 - let's understand the pointer approach using example
 - input arr = [0,1,2,1,2,0,1]
