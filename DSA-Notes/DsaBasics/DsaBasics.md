@@ -81,6 +81,10 @@ console.log(deleteEl(20));
 - Time Complexity: O(N) 
 - Auxiliary Space: O(1)
 
+- ***What is Sorting?***
+- A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+
+
 ##### STACK
 - What is Stack ???
 https://www.geeksforgeeks.org/stack-data-structure/
@@ -90,3 +94,5 @@ https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-stack
 
 ***Difference-between-stack-and-array***
 - https://www.geeksforgeeks.org/difference-between-stack-and-array/
+
+
