@@ -1,5 +1,5 @@
 ##### Leetcode - 162 - Difficulty - medium
-##### Sort an array of 0s, 1s and 2s | Dutch National Flag problem
+##### Find a peak element which is not smaller than its neighbours
 
 A peak element is an element that is strictly greater than its neighbors.
 
