@@ -52,14 +52,11 @@ ________________________________________________________________________________
 
 ##### Solution 2 - using for loop
 
-![Alt text](image-2.png)
+***Code***
 
 ```
-const minmax = {};
 class Solution{
   getMinMax(arr, n){
-      let min = arr[0];
-      let max = arr[n-1];
       let temp;
       
       for(let i = 1 ; i< n; i++){
@@ -80,9 +77,7 @@ class Solution{
         }
       }
           
-      minmax.min = arr[0];
-      minmax.max = arr[n-1];
-      return `${minmax.min.toString()} ${minmax.max.toString()}`;
+      return `${arr[0].toString()} ${arr[n-1].toString()}`;
   }
 }
 
@@ -92,4 +87,8 @@ console.log(min_max);
 ```
 
 ***Output***
-![Alt text](image-3.png)
+![Alt text](image-4.png)
+
+***Complexity***
+- Time complexity - O(n)
+- Space complexity - O(1)
