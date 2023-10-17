@@ -1,4 +1,13 @@
-##### Greatest 3 Elements Ina Distinct Array , Difficulty - easy
+##### Find the largest three distinct elements in an array , Difficulty - easy
+
+Given an array with all distinct elements, find the largest three elements. Expected time complexity is O(n) and extra space is O(1). 
+
+Examples :
+```
+Input: arr[] = {10, 4, 3, 50, 23, 90}
+Output: 90, 50, 23
+```
+__________________________________________________________________
 
 ***Approach 1 - using  partial sorting***
 
@@ -24,7 +33,9 @@ console.log(greatest3EleInDistinctArr(arr));
 - ***Time Complexity*** - O(nlogm), where m is distance(middle-first).
 - ***Space Complexity*** - O(1)
 
-***Explanation for the Approach 3 - using Iteration***
+__________________________________________________________________
+
+***Explanation for the Approach 2 - using Iteration***
 
 arr = [10,4,3,50,23,80,9]
 
