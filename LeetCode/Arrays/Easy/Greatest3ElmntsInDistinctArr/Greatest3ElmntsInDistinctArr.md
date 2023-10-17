@@ -15,4 +15,5 @@ S.no | Element | array | condition run | consditions satisfied | Values
 --- | --- | --- | --- |--- |--- 
 arr[0] | 10 | ![Alt text](image-1.png) | ![Alt text](image-2.png) | first -  true, so will not go in the else part | first = 10, second = 0, third = 0
 arr[1] | 4 | ![Alt text](image-3.png) | ![Alt text](image-4.png) | first - false, second - true, so will not go in the else part | first = 10, second = 4, third = 0
-arr[2] | 3 | ![Alt text](image-5.png) | ![Alt text](image-6.png) | first - false, second - true , third - true | first = 10, second = 4, third = 3
+arr[2] | 3 | ![Alt text](image-5.png) | ![Alt text](image-6.png) | first - false, second - false , third - true | first = 10, second = 4, third = 3
+arr[3] | 50 | ![Alt text](image-7.png) | ![Alt text](image-8.png) | first -  true, so will not go in the else part | first = 50, second = 10, third = 4
