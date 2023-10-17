@@ -18,3 +18,5 @@ arr[1] | 4 | ![Alt text](image-3.png) | ![Alt text](image-4.png) | first - false
 arr[2] | 3 | ![Alt text](image-5.png) | ![Alt text](image-6.png) | first - false, second - false , third - true | first = 10, second = 4, third = 3
 arr[3] | 50 | ![Alt text](image-7.png) | ![Alt text](image-8.png) | first -  true, so will not go in the else part | first = 50, second = 10, third = 4
 arr[4] | 23 | ![Alt text](image-9.png) | ![Alt text](image-10.png) |  first - false, second - true, so will not go in the else part | first = 50, second = 23, third = 10
+arr[5] | 80 | ![Alt text](image-11.png) | ![Alt text](image-12.png) | first -  true, so will not go in the else part | first = 80, second = 50, third = 23
+arr[6] | 9 | ![Alt text](image-13.png) | ![Alt text](image-14.png) | first - false, second - false , third - false = loop ends | first = 80, second = 50, third = 23
