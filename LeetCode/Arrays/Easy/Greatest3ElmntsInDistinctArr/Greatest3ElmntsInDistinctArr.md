@@ -20,3 +20,38 @@ arr[3] | 50 | ![Alt text](image-7.png) | ![Alt text](image-8.png) | first -  tru
 arr[4] | 23 | ![Alt text](image-9.png) | ![Alt text](image-10.png) |  first - false, second - true, so will not go in the else part | first = 50, second = 23, third = 10
 arr[5] | 80 | ![Alt text](image-11.png) | ![Alt text](image-12.png) | first -  true, so will not go in the else part | first = 80, second = 50, third = 23
 arr[6] | 9 | ![Alt text](image-13.png) | ![Alt text](image-14.png) | first - false, second - false , third - false = loop ends | first = 80, second = 50, third = 23
+
+***Code***
+```
+function greatest3EleInDistinctArr(arr){
+  let first = 0, second = 0, third= 0;
+  
+  for(let i = 0; i< arr.length; i++){
+    if(arr[i] > first){
+      third = second;
+      second = first;
+      first = arr[i];
+    }
+    else if(arr[i] > second){
+      second = arr[i];
+      third = second;
+    }
+    else if(arr[i] > third){
+      third = arr[i];
+    }
+  }
+  return `first largest : ${first}, Second largest : ${second}, Third largest : ${third}`;
+}
+
+const arr = [10,4,3,50,23,80,9];
+console.log(greatest3EleInDistinctArr(arr));
+```
+
+***Output***
+```
+- first largest : 80, Second largest : 50, Third largest : 23
+```
+
+***Complexity***
+- ***Time Complexity*** - O(n)
+- ***Space Complexity*** - O(1)
