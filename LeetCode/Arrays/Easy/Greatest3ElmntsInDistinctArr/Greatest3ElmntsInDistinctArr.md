@@ -1,6 +1,30 @@
 ##### Greatest 3 Elements Ina Distinct Array , Difficulty - easy
 
-***Explanation for the Approach***
+***Approach 1 - using  partial sorting***
+
+***Code***
+```
+function greatest3EleInDistinctArr(arr){
+  //Using sorting
+  arr.sort((a,b) => a-b);
+  arr.reverse();
+  return `first largest : ${arr[0]}, Second largest : ${arr[1]}, Third largest : ${arr[2]}`;
+}
+
+const arr = [10,4,30,50,23,80,9];
+console.log(greatest3EleInDistinctArr(arr));
+```
+
+***Output***
+```
+- first largest : 80, Second largest : 50, Third largest : 30
+```
+
+***Complexity***
+- ***Time Complexity*** - O(nlogm), where m is distance(middle-first).
+- ***Space Complexity*** - O(1)
+
+***Explanation for the Approach 3 - using Iteration***
 
 arr = [10,4,3,50,23,80,9]
 
