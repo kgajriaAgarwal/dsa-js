@@ -49,8 +49,9 @@ _____________________________________________________________________________
 ***Approach 2: Efficient approach***
 
 ***Finding the second largest element in a single traversal.***
-- ![Alt text](image.png)
+![Alt text](image.png)
 
+***Code***
 ```
 function largestSecondElement(arr){
   let first= 0, second=0;
