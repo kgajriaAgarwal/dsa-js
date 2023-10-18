@@ -20,6 +20,31 @@ Output: The second largest does not exist.
 Explanation: Largest element of the array 
 is 10 there is no second largest element
 ```
+______________________________________________________________________________
+***Approach 1***
+- using sorting
+
+***Code***
+```
+function largestSecondElement(arr){
+ arr.sort((a,b) => a-b);
+ return `second largest element in array is: ${arr[arr.length-2]}`
+}
+
+const arr = [555,10,1,30,50,1, 100];
+console.log(largestSecondElement(arr));
+```
+
+***Output***
+- second largest element in array is: 100
+
+***Complexity***
+- Time Complexity: O(nlogn). 
+  - as sorting is used here.
+- Auxiliary space: O(1). 
+  - As no extra space is required.
+
+_____________________________________________________________________________
 
 ***Approach 2: Efficient approach***
 
@@ -55,3 +80,41 @@ console.log(largestSecondElement(arr));
   - Only one traversal of the array is needed.
 - Auxiliary space: O(1). 
   - As no extra space is required.
+
+_______________________________________________________________________________________
+
+***Approach -3***
+- using map Data structure
+
+***code***
+```
+function largestSecondElement(arr){
+ let map = {};
+ for(let i=0;i<arr.length;i++){
+   
+     if(arr[i] in map){
+       map[arr[i]] += 1 
+     }else{
+       map[arr[i]] = 1
+     }
+   
+ }
+ console.log(map);
+ let keys = Object.keys(map);
+ console.log("keys:", keys);
+ return `second largest element in array is: ${keys[keys.length-2]}`
+}
+
+const arr = [555,10,1,30,50,1, 100];
+console.log(largestSecondElement(arr));
+```
+
+***output***
+
+- map: { '1': 2, '10': 1, '30': 1, '50': 1, '100': 1, '555': 1 }
+- keys: [ '1', '10', '30', '50', '100', '555' ]
+- second largest element in array is: 100
+
+***Complexity***
+- Time Complexity: O(n), where n = size of array
+- Auxiliary Space: O(n)
