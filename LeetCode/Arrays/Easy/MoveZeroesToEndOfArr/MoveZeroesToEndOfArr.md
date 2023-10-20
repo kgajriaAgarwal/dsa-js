@@ -23,6 +23,40 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________
 
+***Approach 1: Partitioning the array***
+
+Approach: The approach is pretty simple. We will use 0 as a pivot element and whenever we see a non zero element we will swap it with the pivot element. So all the non zero element will come at the beginning.
+
+```
+function pushZeroesToEnd(arr){
+  let j = 0, temp;
+  
+  for(let i=0;i<arr.length ;i++){
+    console.log("i:",i,"j:",j);
+    if(arr[i] !=0){
+      //swap arr[i] and arr[j]
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+      j++;
+      console.log("i@@:",i,"j@@:",j)
+    }
+  }
+  
+  return arr;
+}
+
+const arr = [5,6,0,4,6,0,9,0,8];
+console.log( pushZeroesToEnd(arr))
+```
+
+***Explanation*** 
+![Alt text](image-2.png)
+
+***Complexity***
+- Time Complexity: O(N), where N is the size of elements of the input array.
+- Auxiliary Space: O(1) 
+
 ```
 // console.log("Hello, World!");
 
