@@ -36,3 +36,53 @@ console.log(rearrangeArray(arr));
 
 - ***Time Complexity*** - O(nlogn)
 - ***Space Complexity*** - O(n) , As an extra array has been create to store the result.
+
+____________________________________________________________
+
+##### Approach 2
+
+// JavaScript program to rearrange the elements
+// in the array such that even positioned are
+// greater than odd positioned elements
+ 
+
+***Code***
+```
+  function rearrange(arr, n)
+  {
+    for(let i= 1;i<n;i++){
+      let temp;
+      //Even
+      if(i%2 == 0){
+        if(arr[i]<arr[i-1]){
+          //Swap it using temp variable
+          temp = arr[i];
+          arr[i] = arr[i-1];
+          arr[i-1] = temp;
+        }
+      }
+      else{
+        //Odd
+        if(arr[i]> arr[i-1]){
+          //swap it using temp
+          temp = arr[i];
+          arr[i] = arr[i-1];
+          arr[i-1] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+      
+ 
+// Driver code
+         
+    let n = 5;
+    const arr = [9,8,4,0,0,2,7,0,6,0,9];
+    console.log(rearrange(arr, arr.length));
+```
+
+
+##### Complexity
+- ***Time Complexity*** - O(n)
+- ***Space Complexity*** - O(1) 
