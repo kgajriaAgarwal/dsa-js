@@ -45,3 +45,10 @@ console.log(rearrangeMaxMin(arr));
 ***Complexity***
 - TC - O(n)
 - SC - O(n), as an extra space is occupied for creating the new result_arr
+
+##### Exercise: How to solve this problem if extra space is not allowed? 
+```
+***Expected Complexity***
+- TC - O(n)
+- SC - O(1)
+```
