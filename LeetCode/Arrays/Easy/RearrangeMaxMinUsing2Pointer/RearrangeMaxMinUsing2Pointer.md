@@ -114,3 +114,30 @@ Index % 2 != 0 , Odd Index
 - 3 % 6 = 3
 - If we do x % y, where y > x, then we will get the x 
 - As we are getting the same value we are adding 1 to the arr[arr.length-1] , this helps us to keep the track of the old value.
+
+***Approach***
+![Alt text](image-6.png)
+
+##### step 1
+- i = 0 ( EVEN ) 
+- ***arr[i] = ( arr[max_index] % max ) * max + arr[i]***, for even index
+- arr[0] = ( 6 % 7 ) * 7 + 1 = 43
+- Array after execution (1st iteration) 
+![Alt text](image-7.png)
+- After 1st iteration, ***max_indx--***
+
+##### step 2
+- i = 1 ( ODD ) 
+- ***arr[i] = ( arr[min_index] % max ) * max + arr[i]***
+- arr[1] = ( 43 % 7 ) * 7 + 2 = 9
+- Array after execution (2nd iteration)
+![Alt text](image-8.png)
+- After 2nd iteration, ***min_indx++***
+
+##### step 3
+- i = 2 ( EVEN ) 
+- ***arr[i] = ( arr[max_index] % max ) * max + arr[i]***, for even index
+- arr[2] = ( 5 % 7 ) * 7 + 3 = 38
+- Array after execution (3rd iteration) 
+![Alt text](image-9.png)
+- After 3rd iteration, ***max_indx--***
