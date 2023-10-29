@@ -233,3 +233,7 @@ function rearrange(arr, n)
  
     console.log("Modified Array:",rearrange(arr, n));
 ```
+
+***Complexity***
+- TC - O(n)
+- SC - O(1)
