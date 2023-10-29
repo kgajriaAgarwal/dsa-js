@@ -89,4 +89,28 @@ Let us calculate few values
 
 _____________ *** EVEN ***____________________________
 
+Index % 2 == 0 , Even Index
+
+- ***arr[i] = ( arr[max_index] % max ) * max + arr[i]***
+![Alt text](image-4.png)
+
 _____________ *** ODD ***____________________________
+
+Index % 2 != 0 , Odd Index
+
+- ***arr[i] = ( arr[min_index] % max ) * max + arr[i]***
+![Alt text](image-5.png)
+
+***Note*** 
+- Here we have used Modulus (%), for storing, or keeping track of the old value.
+
+- Let us calculate the value for ***max***, thet is used in the above formula
+***max = arr[arr.length - 1] + 1***
+- So here for arr = [1,2,3,4,5,6], value of max = 6 + 1 = 7, 
+
+- Here we adding 1 to the maximumn value of the arr that is 6, because
+- 5 % 6 = 5
+- 4 % 6 = 4
+- 3 % 6 = 3
+- If we do x % y, where y > x, then we will get the x 
+- As we are getting the same value we are adding 1 to the arr[arr.length-1] , this helps us to keep the track of the old value.
