@@ -141,3 +141,95 @@ Index % 2 != 0 , Odd Index
 - Array after execution (3rd iteration) 
 ![Alt text](image-9.png)
 - After 3rd iteration, ***max_indx--***
+
+##### step 4
+- i = 3 ( ODD ) 
+- ***arr[i] = ( arr[min_index] % max ) * max + arr[i]***
+- arr[3] = ( 9 % 7 ) * 7 + 4 = 18
+- Array after execution (4th iteration)
+![Alt text](image-10.png)
+- After 4th iteration, ***min_indx++***
+
+##### step 5
+- i = 4 ( EVEN ) 
+- ***arr[i] = ( arr[max_index] % max ) * max + arr[i]***, for even index
+- arr[4] = ( 18 % 7 ) * 7 + 5 = 33
+- Array after execution (5th iteration) 
+![Alt text](image-11.png)
+- After 5th iteration, ***max_indx--***
+
+##### step 6
+- i = 5 ( ODD ) 
+- ***arr[i] = ( arr[min_index] % max ) * max + arr[i]***
+- arr[5] = ( 38 % 7 ) * 7 + 6 = 27
+- Array after execution (6th iteration)
+![Alt text](image-12.png)
+- After 6th iteration, ***min_indx++***
+
+***loop ends here***
+- so the final array we get here is 
+![Alt text](image-13.png)
+
+- Now let us iterate over the loop, perform the follwing operation 
+```
+for (let i = 0; i < n; i++) {
+  arr[i] = Math.floor(arr[i] / max_elem);
+}
+```
+
+- Here, Finall after performing the above operation on each element in the array we get the desired ouput
+***OUTPUT***
+[ 6, 1, 5, 2, 4, 3 ] 
+
+***Code***
+```
+// JavaScript program to rearrange an array in minimum 
+// maximum form 
+ 
+// Prints max at first position, min at second position 
+// second max at third position, second min at fourth 
+// position and so on. 
+function rearrange(arr, n) 
+{ 
+    // initialize index of first minimum and first 
+    // maximum element 
+    let max_idx = n - 1, min_idx = 0; 
+ 
+    // store maximum element of array 
+    let max_elem = arr[n - 1] + 1; 
+ 
+    // traverse array elements 
+    for (let i = 0; i < n; i++) { 
+        // at even index : we have to put maximum element 
+        if (i % 2 == 0) { 
+            arr[i] += (arr[max_idx] % max_elem) * max_elem; 
+            max_idx--;
+            console.log("EVEN , i:", i, "max_idx:", max_idx);
+        } 
+ 
+        // at odd index : we have to put minimum element 
+        else { 
+            arr[i] += (arr[min_idx] % max_elem) * max_elem; 
+            min_idx++; 
+            console.log("ODD , i:", i, "min_idx:", min_idx);
+        } 
+    } 
+  
+    console.log("nayi array:", arr);
+ 
+    // array elements back to it's original form 
+    for (let i = 0; i < n; i++) 
+        arr[i] = Math.floor(arr[i] / max_elem); 
+        
+    return arr;
+} 
+ 
+// Driver program to test above function 
+ 
+    let arr = [ 1, 2, 3, 4, 5, 6 ]; 
+    let n = arr.length; 
+ 
+    
+ 
+    console.log("Modified Array:",rearrange(arr, n));
+```
