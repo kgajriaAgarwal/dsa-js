@@ -204,18 +204,16 @@ function rearrange(arr, n)
         if (i % 2 == 0) { 
             arr[i] += (arr[max_idx] % max_elem) * max_elem; 
             max_idx--;
-            console.log("EVEN , i:", i, "max_idx:", max_idx);
         } 
  
         // at odd index : we have to put minimum element 
         else { 
             arr[i] += (arr[min_idx] % max_elem) * max_elem; 
             min_idx++; 
-            console.log("ODD , i:", i, "min_idx:", min_idx);
         } 
     } 
   
-    console.log("nayi array:", arr);
+    console.log("modified array:", arr);
  
     // array elements back to it's original form 
     for (let i = 0; i < n; i++) 
@@ -229,10 +227,14 @@ function rearrange(arr, n)
     let arr = [ 1, 2, 3, 4, 5, 6 ]; 
     let n = arr.length; 
  
-    
+    console.log("Result Array:",rearrange(arr, n)); 
  
-    console.log("Modified Array:",rearrange(arr, n));
 ```
+
+***Output***
+![Alt text](image-14.png)
+- modified array: [ 43, 9, 38, 18, 33, 27 ]
+- Result Array: [ 6, 1, 5, 2, 4, 3 ]
 
 ***Complexity***
 - TC - O(n)
